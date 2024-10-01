@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('badges', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('description');
+            $table->longText('description');
             $table->string('file');
             $table->integer('min_coins');
             $table->integer('max_coins');
